@@ -12,29 +12,26 @@ body {
 	margin: 0 auto;
 }
 
+/* Navigation */
 nav {
 	padding: 40px 160px 40px 160px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	box-shadow: 0px 0px 15px #00000066;
+	box-shadow: 0px 15px 15px -15px #00000066;
 	position: relative;
-}
-
-.logo-box {
-	width: 25%;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 nav img {
 	width: 100%;
 	max-width: 200px;
 }
-
 nav ul li {
 	list-style-type: none;
 	padding-left: 50px;
+}
+
+.logo-box {
+	width: 25%;
 }
 
 .nav-text ul li a {
@@ -43,11 +40,9 @@ nav ul li {
 	font-weight: 700;
 	font-size: 18px;
 }
-
 .nav-text ul li:first-child {
 	padding-left: 0;
 }
-
 .nav-text {
 	letter-spacing: .9px;
 	width: 75%;
@@ -59,7 +54,6 @@ nav ul li {
 	font-size: 18px;
 	font-weight: 700;
 }
-
 .delivery a {
 	text-decoration: none;
 	color: #58585a;
@@ -77,7 +71,7 @@ a:hover,
 .close,
 .menu {
 	display: none;
-	letter-spacing: .9;
+	letter-spacing: .9px;
 }
 .nav-text ul {
 	display: flex;
@@ -87,7 +81,6 @@ a:hover,
 }
 
 /* lightbox */
-
 #lightbox img {
 	width: 100%;
 }
@@ -110,12 +103,11 @@ a:hover,
 	z-index: 2;
 	position: absolute;
 	top: 0;
+	left: 0;
 }
-
 .lightbox-content {
 	margin: 0 auto;
 	max-width: 600px;
-	/* background: rgba(88, 88, 88, 1); */
 	background: white;
 	box-shadow: 0px 0px 15px #00000066;
 }
@@ -130,55 +122,18 @@ a:hover,
 }
 
 .lightbox-content p {
-	/* color: #585858; */
 	font-weight: normal;
 	padding: 0 20px;
 	line-height: 1.5;
 }
 
-/* homepage first section */
-/* #home-header img {
-	width: 100%;
-	position: relative;
-}
-
-#home-header .header-text {
-	position: absolute;
-	top: 200px;
-	max-width: 698px;
-	left: 160px;
-}
-.header-text h1 {
-	font-size: 58px;
-	margin-top: 0;
-}
-
-.header-text p {
-	font-size: 22px;
-	max-width: 608px;
-	line-height: 2;
-	opacity: .8;
-	padding-bottom: 60px;
-}
-
-.header-text a {
-	background: #a9c23f;
-	padding: 20px 50px;
-	font-size: 20px;
-	text-decoration: none;
-	font-weight: 700;
-	color: black;
-} */
-
+/* first section */
 #home-header {
 	background-image: url(images/header.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-/* #home-header .header-text {
-	padding-left: 160px;
-} */
 .header-text {
 	width: 62%;
 	padding: 118px 160px;
@@ -261,16 +216,14 @@ a:hover,
 		width: 100%;
 		padding: 95px 0;
 	}
-
 	.nav-text ul li {
 		width: 100%;
 		text-align: center;
 		padding: 20px 0;
 	}
-
 	.nav-text ul li a {
 		padding: 0;
-		letter-spacing: 1.5;
+		letter-spacing: 1.5px;
 		font-size: 30px;
 	}
 
@@ -279,7 +232,7 @@ a:hover,
 		padding-right: 10px;
 	}
 
-	/* toggle menu/hambuerger and close button */
+	/* toggle menu/hamburger and close button */
 	nav .hide-menu {
 		display: none;
 	}
@@ -314,17 +267,17 @@ a:hover,
 		width: 100%;
 	}
 
+	.mobile-delivery p a {
+		text-decoration: none;
+		color: white;
+	}
+
 	.delivery {
 		display: none;
 		background: #7a9a01;
 		width: 100%;
 		color: white;
 	}
-	.mobile-delivery p a {
-		text-decoration: none;
-		color: white;
-	}
-
 	.mobile-delivery {
 		display: none;
 	}
@@ -351,15 +304,12 @@ a:hover,
 		width: 100%;
 		padding: 40px 30px 20px 30px;
 	}
-
 	.header-text h1 {
 		font-size: 38px;
 	}
-
 	.header-text p {
 		font-size: 16px;
 	}
-
 	.header-text a {
 		display: block;
 		text-align: center;
