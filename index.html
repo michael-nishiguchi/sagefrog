@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PDX | Home</title>
+  <meta name="description" content="PDX Homepage">
+  <meta name="author" content="Sagefrog">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6e0fec262f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <nav>
+
+    <div class="logo-box">
+      <img alt="PDX Logo" src="images/logo.png">
+    </div>
+    <div class="menu" id="menu">
+      <i class="fas fa-bars"></i>
+      <div>Menu</div>
+    </div>
+
+    <div class="close" id="close">
+      <i class="fas fa-times"></i>
+      <div>Close</div>
+    </div>
+
+
+    <div class="nav-text" id="nav-text">
+      <div class="delivery">Schedule A Delivery: <a href="tel:610-595-3390">610-595-3390</a></div>
+      <ul>
+        <li><a href="#" id="openLightbox">What We Do</a></li>
+        <li><a href="#">Who We Serve</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-delivery" class="mobile-delivery">
+      <p>Schedule A Delivery</p>
+      <p><a href="tel:610-595-3390">610-595-3390</a></p>
+    </div>
+  </nav>
+
+
+
+  <div id="lightbox" class="hideLightbox">
+    <div class="lightbox-content">
+      <img src="images/van.png" alt="delivery van">
+      <h2>What We Do</h2>
+      <p>Nisi in ex nulla anim ipsum nostrud exercitation ad ex culpa nostrud irure dolore. Dolor exercitation amet
+        proident ullamco veniam in excepteur cupidatat occaecat laboris pariatur eiusmod. Dolore consequat incididunt
+        nisi veniam exercitation. Eiusmod ipsum dolor eu cillum sunt consequat aliquip deserunt aute est elit mollit
+        magna laborum. Veniam dolor ullamco do velit et labore est culpa aute id nulla. Consectetur voluptate Lorem
+        cillum reprehenderit sunt.</p>
+    </div>
+  </div>
+  <script>
+    document.getElementById("openLightbox").addEventListener("click", openLightbox);
+    document.getElementById("lightbox").addEventListener("click", openLightbox);
+    document.getElementById("menu").addEventListener("click", toggleMenu);
+    document.getElementById("close").addEventListener("click", toggleMenu);
+
+    function openLightbox() {
+      document.getElementById("lightbox").classList.toggle("showLightbox");
+    }
+
+
+    function toggleMenu() {
+      document.getElementById("nav-text").classList.toggle("show-nav");
+      document.getElementById("mobile-delivery").classList.toggle("show-delivery");
+      document.getElementById("menu").classList.toggle("hide-menu");
+      document.getElementById("close").classList.toggle("show-close");
+    }
+  </script>
+</body>
+
+</html>
